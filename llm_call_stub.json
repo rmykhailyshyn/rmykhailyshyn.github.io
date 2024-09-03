@@ -1,0 +1,8 @@
+{
+    "text_input": ".form-group input[type=\"text\"]",
+    "email_input": ".form-group input[type=\"email\"]",
+    "tel_input": ".form-group input[type=\"tel\"]",
+    "url_input": ".form-group input[type=\"url\"]",
+    "select": ".form-group select",
+    "textarea": ".form-group textarea"
+  }
