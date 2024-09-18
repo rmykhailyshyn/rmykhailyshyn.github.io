@@ -70,38 +70,39 @@
 <body>
 
 <div class="container">
-    <h1>Add New Client</h1>
+    <h1>Add New Prospect</h1>
     <form action="#" method="post">
         <div class="form-group">
-            <label for="clientName">Client Name</label>
-            <input type="text" id="clientName" name="clientName" required>
+            <label for="clientName">Prospect Name</label>
+            <input type="text" name="prospectName_ctrl" required>
         </div>
         <div class="form-group">
             <label for="phone">Phone #</label>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="tel" name="phone_ctrl" required>
         </div>
         <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email_ctrl">Email</label>
             <input type="email" id="email" name="email" required>
         </div>
         <div class="form-group">
-            <label for="website">Website</label>
+            <label for="website_ctrl">Website</label>
             <input type="url" id="website" name="website">
         </div>
         <div class="form-group">
             <label>Industry</label>
-            <div class="radio-group">
-                <label><input type="radio" name="industry" value="Technology"> Technology</label>
-                <label><input type="radio" name="industry" value="Finance"> Finance</label>
-                <label><input type="radio" name="industry" value="Healthcare"> Healthcare</label>
-                <label><input type="radio" name="industry" value="Education"> Education</label>
-            </div>
+            <select name="Industry_ctrl" size="5">
+                    <option value="technology">Technology</option>
+                    <option value="finance">Finance</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="education">Education</option>
+                    <option value="other">Other</option>
+            </select>
         </div>
         <div class="form-group">
-            <label for="notes">Notes</label>
-            <textarea id="notes" name="notes" rows="5"></textarea>
+            <label for="notes">Other Details</label>
+            <textarea id="details" name="details" rows="5"></textarea>
         </div>
-        <button type="submit">Add Client</button>
+        <button type="submit">Add Prospect</button>
     </form>
 </div>
 
